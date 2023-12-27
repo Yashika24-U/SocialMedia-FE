@@ -1,0 +1,5 @@
+json.config:
+
+ when you import different files into other files
+ you can start from src that means when we code it
+ up its pretty simple
