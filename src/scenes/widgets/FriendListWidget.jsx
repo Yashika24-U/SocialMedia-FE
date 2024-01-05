@@ -15,7 +15,7 @@ const FriendListWidget = ({ userId }) => {
 
   const getFriends = async () => {
     const response = await fetch(
-      `http://localhost:3002/users/${userId}/friends`,
+      `https://mernapp-h0wp.onrender.com/users/${userId}/friends`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },

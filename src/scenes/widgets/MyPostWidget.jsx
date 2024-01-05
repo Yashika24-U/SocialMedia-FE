@@ -54,7 +54,7 @@ const MyPostWidget = ({ picturePath }) => {
     }
   formData.append('usePicturePath', picturePath1)
     
-    const response = await fetch(`http://localhost:3002/posts`, {
+    const response = await fetch(`https://mernapp-h0wp.onrender.com/posts`, {
       method: "POST",
       headers: { Authorization:`Bearer ${token}`},
       body: formData,

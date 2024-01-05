@@ -64,7 +64,7 @@ const register = async(values,onSubmitProps)=>{
     formData.append('picturePath',values.picture.name)
 
     const savedUserResponse  = await fetch(
-        "http://localhost:3002/auth/register",
+        "https://mernapp-h0wp.onrender.com/register",
         {
             method : "POST",
             body : formData,
@@ -80,7 +80,7 @@ const register = async(values,onSubmitProps)=>{
 
 const login = async(values,onSubmitProps)=>{
         const loggedInResponse  = await fetch(
-            "http://localhost:3002/auth/login",
+            "https://mernapp-h0wp.onrender.com/login",
             {
                 method : "POST",
                 headers : {"Content-Type" :"application/json"},
